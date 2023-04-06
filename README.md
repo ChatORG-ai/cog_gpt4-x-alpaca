@@ -1,7 +1,6 @@
+Run GPT4 x Alpaca 13B, Finetuned on GPT4's responses (https://huggingface.co/chavinlo/gpt4-x-alpaca) on replicate.com
 
-<p align="center" width="100%">
-<a href="https://crfm.stanford.edu/alpaca/" target="_blank"><img src="assets/logo.png" alt="Stanford-Alpaca" style="width: 50%; min-width: 300px; display: block; margin: auto;"></a>
-</p>
+Clone https://huggingface.co/chavinlo/gpt4-x-alpaca to here, and cog push model.
 
 # Stanford Alpaca: An Instruction-following LLaMA Model 
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE) 

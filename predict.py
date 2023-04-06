@@ -6,15 +6,15 @@ import torch
 from train import PROMPT_DICT
 PROMPT = PROMPT_DICT['prompt_no_input']
 
-CACHE_DIR = 'alpaca_out'
+CACHE_DIR = 'gpt4-x-alpaca'
 
 class Predictor(BasePredictor):
     def setup(self):
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.model = LLaMAForCausalLM.from_pretrained("alpaca_out", cache_dir=CACHE_DIR, local_files_only=True)
+        self.model = LLaMAForCausalLM.from_pretrained("gpt4-x-alpaca", cache_dir=CACHE_DIR, local_files_only=True)
         self.model = self.model
         self.model.to(self.device)
-        self.tokenizer = LLaMATokenizer.from_pretrained("alpaca_out", cache_dir=CACHE_DIR, local_files_only=True)
+        self.tokenizer = LLaMATokenizer.from_pretrained("gpt4-x-alpaca", cache_dir=CACHE_DIR, local_files_only=True)
 
     def predict(
         self,
